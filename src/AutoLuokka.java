@@ -3,24 +3,22 @@ public class AutoLuokka {
 
 	public static void main(String[] args) {
 	
-		Auto auto1 = new Auto();
-		auto1.merkki = "Opel";
-		auto1.malli = "Vectra";	
-		auto1.bensanMaara = 9;
-		auto1.tankataan = 5;
-		
-		
-//
+//		Auto auto1 = new Auto();
+//		auto1.merkki = "Opel";
+//		auto1.malli = "Vectra";	
+//		auto1.bensanMaara = 9;
+//		auto1.tankataan = 5;
 //		
 //		
-		auto1.naytaTiedot();
-		auto1.kiihdyta();
-		auto1.kiihdyta();
-		auto1.tankkaa();
+//		
+//		auto1.naytaTiedot();
+//		auto1.kiihdyta();
+//		auto1.kiihdyta();
+//		auto1.tankkaa();
 		
-//		auto auto2 = new auto("Audi","A6", 15);
-//		auto2.tankataan = 5;
-//		auto2.tankkaa();
+		Auto auto2 = new Auto("Audi","A6", 15);
+		auto2.tankataan = 5;
+		auto2.tankkaa();
 		
 	}
 	
@@ -33,12 +31,12 @@ public class AutoLuokka {
 		public int bensanMaara;
 		public int tankataan;
 		
-//	public Auto(String m, String t, int b)
-//		{
-//			merkki = m;
-//			malli = t;
-//			bensanMaara = b;
-//		}
+	public Auto(String m, String t, int b)
+		{
+			merkki = m;
+			malli = t;
+			bensanMaara = b;
+		}
 		
 		public void jarruta()
 		{
