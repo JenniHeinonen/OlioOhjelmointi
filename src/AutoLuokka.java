@@ -39,10 +39,10 @@ public class AutoLuokka {
 		}
 		
 		public void jarruta()
+		
 		{
 			System.out.println("Auto jarruttaa");
-			
-			
+				
 		}
 		
 		

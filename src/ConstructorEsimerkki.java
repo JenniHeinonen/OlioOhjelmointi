@@ -3,35 +3,35 @@ public class ConstructorEsimerkki {
 
 	public static void main(String[] args) {
 
-		Monitor monitor1 = new Monitor();
+		Näyttö monitor1 = new Näyttö();
 		monitor1.printData();
 		
-		Monitor monitor2 = new Monitor("Miele");
+		Näyttö monitor2 = new Näyttö("Miele");
 		monitor2.printData();
 		
-		Monitor monitor3 = new Monitor("LG", true);
+		Näyttö monitor3 = new Näyttö("LG", true);
 		monitor3.printData();
 	}
 
 }//end of the monitor app
 
-class Monitor
+class Näyttö
 {
 	public boolean isOn;
 	public String brand;
 	
-	public Monitor()  //default constructor
+	public Näyttö()  //default constructor
 	{
 		brand="";
 		isOn=false;
 	}
 	
-	public Monitor(String brandName)  //parameterized constructor
+	public Näyttö(String brandName)  //parameterized constructor
 	{
 		isOn=false;
 		brand = brandName;
 	}
-	public Monitor(String brand, boolean isOn) //parameterized constructor
+	public Näyttö(String brand, boolean isOn) //parameterized constructor
 	{
 		this.isOn=isOn;							//jos samat nimet, käytä this.
 		this.brand = brand;
